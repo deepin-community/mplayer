@@ -1,0 +1,10 @@
+#!/bin/sh
+set -e
+
+#install altivec and noaltivec alternatives on powerpc
+if [ -e /usr/bin/mplayer-noaltivec ]; then
+    update-alternatives  --install /usr/bin/mplayer mplayer /usr/bin/mplayer-altivec 50
+    update-alternatives  --install /usr/bin/mplayer mplayer /usr/bin/mplayer-noaltivec 20
+fi
+
+#DEBHELPER#
