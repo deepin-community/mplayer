@@ -1,0 +1,3 @@
+debian/mplayer.desktop usr/share/applications/
+gmplayer usr/bin/
+gui-msg/usr/share/*     usr/share/

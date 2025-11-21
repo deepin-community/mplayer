@@ -1,0 +1,5 @@
+0002_mplayer_debug_printf.patch
+0201_PATH_MAX_HURD.patch
+0202_glibc-2.27.patch
+0203_generic-arch-fallback.patch
+0204_fix-ftbfs-jack-ffmpeg7.patch

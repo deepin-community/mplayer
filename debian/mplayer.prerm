@@ -1,0 +1,11 @@
+#!/bin/sh
+set -e
+
+#remove altivec and noaltivec alternatives on powerpc
+if [ "$1" != "upgrade" ]; then
+    if [ -e /usr/bin/mplayer-noaltivec ]; then
+        update-alternatives --remove-all mplayer
+    fi
+fi
+
+#DEBHELPER#
